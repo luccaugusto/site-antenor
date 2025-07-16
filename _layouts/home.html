@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Source+Serif+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="logo">{{ site.title }}</a>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="tagline">
+            {{ site.description }}
+        </div>
+
+        <div class="content-layout">
+            <section class="services-section">
+                <h2 class="section-title">Serviços do Antenor</h2>
+
+                <div class="services-list">
+                    {% for service in site.data.services %}
+                    <div class="service-card" onclick="toggleService(this)">
+                        <h3 class="service-title">
+                            <a href="{{ service.url }}" target="_blank" rel="noopener noreferrer">{{ service.name }}</a>
+                        </h3>
+                        <p class="service-short">
+                            {{ service.description }}
+                        </p>
+                        <div class="expand-indicator">Clique para saber mais ↓</div>
+                        <p class="service-long">
+                            {{ service.long_description }}
+                        </p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <!-- Image section -->
+            <section class="image-section">
+                <div class="image-box">
+                    <div class="image-placeholder">
+                        Aqui ficará a imagem do Antenor<br>
+                        (Substitua por uma foto vintage)
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="{{ '/_js/base.js' | relative_url }}"></script>
+</body>
+</html>

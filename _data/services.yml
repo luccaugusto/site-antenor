@@ -1,0 +1,36 @@
+- name: Filmes, Séries, etc
+  url: https://filmes.luccaaugusto.xyz
+  description: Antenor traz uma curadoria impressionante de medias visuais, livros e músicas
+  long_description: >-
+    Veja Filmes, Séries, Animes, Mangás, Livros e Músicas sem passar raiva com serviços de streaming.
+
+- name: Pedidos de Mídia
+  url: https://pedidos.luccaaugusto.xyz
+  description: Solicite Filmes e Séries que gostaria de ver e logo menos Antenor encontra eles pra você
+  long_description: >-
+    Entre com sua conta e busque pelo que deseja assistir.
+    Sua senha é senha123, caso tenha esquecido.
+
+- name: Fotos
+  url: https://fotos.luccaaugusto.xyz
+  description: Antenor organiza e salva sua coleção de fotos
+  long_description: >-
+    Veja e filtre eficientemente suas fotos.
+
+- name: Downloads
+  url: https://transmission.luccaaugusto.xyz
+  description: Veja o que Antenor está baixando
+  long_description: >-
+    Gerenciador de torrents transmission
+
+- name: Lista telefônica da internet
+  url: https://pihole.luccaaugusto.xyz
+  description: Antenor sabe onde encontrar todos os seus sites, e quais sites é melhor evitar
+  long_description: >-
+    Servidor DNS que bloqueia anúncios e rastreadores (Pi-hole)
+
+- name: Administração
+  url: https://proxmox.luccaaugusto.xyz
+  description: Converse com Antenor sobre o que está acontecendo e acompanhe o backstage
+  long_description: >-
+    Painel de administração do Proxmox
